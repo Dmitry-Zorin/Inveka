@@ -11,7 +11,7 @@ export default function Head({ children, title, desc }: HeadProps) {
 	return (
 		<NextHead>
 			<title>{`${title} | Учебный центр «Inveka»`}</title>
-			<meta name="description" content={desc} />
+			<meta name="description" content={desc ?? title} />
 			{children}
 		</NextHead>
 	)
