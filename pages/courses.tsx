@@ -34,7 +34,7 @@ export default function CoursesPage() {
 					</WrapItem>
 					<WrapItem>
 						<Tag variant="solid" size="lg" bg="primary">
-							<TagLabel>
+							<TagLabel noOfLines={2}>
 								Astra Linux SE, версия 1.6 Сертификат &quot;РусБИТех&quot;
 							</TagLabel>
 							<TagCloseButton />

@@ -130,9 +130,9 @@ export default function Layout({ children }: LayoutProps) {
 								as={motion.img}
 								alt="Лого"
 								src="/logo.jpg"
+								height="50px"
 								initial={{ scale: 0, rotate: -180 }}
 								animate={{ scale: 1, rotate: 0 }}
-								h={'50px'}
 							/>
 						</Link>
 						<Navbar display={{ base: 'none', lg: 'flex' }} />
@@ -140,7 +140,7 @@ export default function Layout({ children }: LayoutProps) {
 						<Box display={{ base: 'block', md: 'none' }}>
 							<Button
 								ref={btnRef}
-								bg="bg-dark"
+								variant="ghost"
 								onClick={onOpen}
 								leftIcon={<Icon icon={faBars} />}
 							>

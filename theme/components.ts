@@ -96,11 +96,10 @@ const components: ThemeComponents = {
 				color: 'text-secondary',
 				px: 3,
 				_hover: {
-					color: 'primary',
-					bg: 'bg-layer-2',
+					bg: 'bg-layer-1',
 				},
 				_active: {
-					bg: 'bg-layer-1',
+					bg: 'bg-layer-2',
 				},
 				_focusVisible: {
 					shadow: '0 0 0 2px var(--chakra-colors-primary)',
