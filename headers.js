@@ -1,10 +1,11 @@
 const isDevelopment = process.env.NODE_ENV === 'development'
 
 const csp = [
-	"default-src 'self' *.yandex.ru yastatic.net",
-	"script-src 'self' 'unsafe-eval' 'unsafe-inline'",
+	"default-src 'self'",
+	'connect-src *.yandex.net',
+	"script-src 'self' 'unsafe-eval' 'unsafe-inline' *.yandex.ru *.yandex.net yastatic.net",
 	"style-src 'self' 'unsafe-inline'",
-	"img-src 'self' data:",
+	"img-src 'self' data: *.yandex.ru *.yandex.net",
 ]
 
 async function headers() {
