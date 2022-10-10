@@ -1,0 +1,11 @@
+out
+build
+coverage
+node_modules
+
+.env
+.next
+.vscode
+.vercel
+.DS_Store
+*.tsbuildinfo
